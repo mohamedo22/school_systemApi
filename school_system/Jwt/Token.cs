@@ -13,6 +13,7 @@ namespace school_system.Jwt
            configuration_ = configuration;
         }
 
+        
         public string GeterateJwtToken()
         {
             var encodeKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration_["Jwt:Key"]));
